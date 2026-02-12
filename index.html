@@ -3,136 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viping Singh - Cricket Expert</title>
+    <title>Viping Singh - Cricket King</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: #000;
-            color: white;
+            background: #000; /* Pure Black Background */
+            font-family: 'Segoe UI', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
         }
 
+        /* Main Card */
         .card {
-            background: #0a0a0a;
-            width: 360px; /* Size chota kiya gaya hai */
-            border: 2px solid #ffca3a;
-            border-radius: 20px;
+            background: #000;
+            width: 340px;
+            border: 2px solid #ffca3a; /* Golden Border */
+            border-radius: 25px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 0 20px rgba(255, 202, 58, 0.2);
-            margin: 10px;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        /* Gol Photo (Circle DP) */
+        .profile-wrapper {
+            position: absolute;
+            top: -65px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             border: 3px solid #ffca3a;
-            margin-top: -60px; /* Floating effect */
-            background: #000;
             object-fit: cover;
+            background: #333;
         }
 
         h1 {
+            margin-top: 70px;
             font-size: 1.8rem;
-            color: #ffca3a;
-            margin: 10px 0;
+            color: #fff;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        .badge {
+        .exp-badge {
             background: #ff0054;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 50px;
             font-weight: bold;
+            font-size: 0.9rem;
             display: inline-block;
+            margin-bottom: 15px;
         }
 
         .winnings {
             color: #00ff88;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: bold;
-            margin: 10px 0;
+            margin-bottom: 15px;
         }
 
-        .prime-box {
-            background: linear-gradient(90deg, #ff9f0a, #ffca3a);
+        .prime-btn {
+            background: linear-gradient(to bottom, #ffca3a, #ff9f0a);
             color: #000;
             font-weight: bold;
-            padding: 8px;
+            padding: 12px;
             border-radius: 8px;
             margin: 15px 0;
+            display: block;
             font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .prime-work {
+            font-size: 0.95rem;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #fff;
         }
 
         .dialogue {
+            font-style: italic;
+            color: #ccc;
             font-size: 1rem;
-            line-height: 1.4;
-            color: #ddd;
-            border-left: 3px solid #ffca3a;
-            padding: 0 10px;
+            padding: 10px;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
             margin: 15px 0;
+            line-height: 1.4;
+        }
+
+        .responsibility {
+            color: #ffca3a;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
         }
 
         /* Mast Blinking Button */
-        .blink-btn {
+        .join-btn {
             background: #0088cc;
-            color: #fff;
-            text-decoration: none;
-            padding: 15px;
-            display: block;
+            color: white;
+            padding: 18px;
             border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-top: 20px;
-            box-shadow: 0 0 15px #0088cc;
-            animation: pulse 1s infinite;
+            font-size: 1.3rem;
+            font-weight: 800;
+            text-decoration: none;
+            display: block;
+            box-shadow: 0 0 20px rgba(0, 136, 204, 0.6);
+            animation: pulse 1.2s infinite;
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.03); opacity: 0.9; }
-            100% { transform: scale(1); opacity: 1; }
+            0% { transform: scale(1); box-shadow: 0 0 10px #0088cc; }
+            50% { transform: scale(1.05); box-shadow: 0 0 30px #0088cc; }
+            100% { transform: scale(1); box-shadow: 0 0 10px #0088cc; }
         }
 
-        .footer-text {
+        .fake-warning {
+            color: #ff4d4d;
             font-size: 0.8rem;
-            color: #777;
-            margin-top: 15px;
+            margin-top: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="profile.jpg" alt="Viping Singh" class="profile-img">
-        
+        <div class="profile-wrapper">
+            <img src="profile.jpg" alt="Viping Singh" class="profile-img">
+        </div>
+
         <h1>VIPING SINGH</h1>
-        <div class="badge">🔥 7 YEARS EXPERIENCE 🔥</div>
+        
+        <div class="exp-badge">🔥 7 YEARS EXPERIENCE 🔥</div>
         
         <div class="winnings">115 Crore + Winner 💰</div>
 
-        <div class="prime-box">⭐ JOIN PRIME FOR BEST FANTASY CRICKET ⭐</div>
+        <div class="prime-btn">⭐ JOIN PRIME FOR BEST FANTASY CRICKET ⭐</div>
         
-        <p style="font-size: 0.9rem; font-weight: bold;">PRIME WORK ❤️ NO FREE TEAMS 🎲</p>
+        <div class="prime-work">PRIME WORK ❤️ NO FREE TEAMS 🎲</div>
 
         <div class="dialogue">
             "जीत एक नशा है, और इस नशे की फैक्ट्री का मैं एकलौता बादशाह हूँ !!" 😎
         </div>
 
-        <p style="color: #ffca3a; font-size: 0.85rem;">(It's my responsibility to make you win)</p>
+        <p class="responsibility">(It's my responsibility to make you win)</p>
 
-        <a href="https://t.me/+U3H3g6jxMPxiNzI1" class="blink-btn">
+        <a href="https://t.me/+U3H3g6jxMPxiNzI1" class="join-btn">
             🚀 JOIN TELEGRAM NOW
         </a>
 
-        <p class="footer-text">⚠️ [Fake Channel Vaalo Se Sawdhan] 🙏</p>
+        <p class="fake-warning">⚠️ [Fake Channel Vaalo Se Sawdhan] 🙏</p>
     </div>
 
 </body>
